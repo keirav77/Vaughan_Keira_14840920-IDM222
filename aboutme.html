@@ -10,10 +10,15 @@
 </head>
 <body>
      <header class="site-header">
-     <input type="checkbox" id="menu-toggle">
+     <div class="logo">
+        <img src="media/lightlog.svg" alt="Light KV ux/ui logo" class="light-logo">
+        <img src="media/darklogo.svg" alt="Dark KV ux/ui logo" class="dark-logo">
+     </div>
+     
+      <input type="checkbox" id="menu-toggle">
      <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav class="site-nav">
-
+<label for="menu-toggle" class="close-menu">X</label>
       <ul class="nav-links">
                <li> <a href="index.html">Home</a> </li>
                 
@@ -26,11 +31,17 @@
             </ul>
         </nav>
     </header>
-  <h1>Hi There! My name is Keira Vaughan.</h1>  
+    <section class="hero"> 
+        <h1 class="hero-title">
+       Hey There! My name is Keira Vaughan.</h1>
+            <p class="hero-subtext">
+                Heres where you can learn more about me!</p>
+    </section>
+<main>
   <section class="about">
 
   <div class="about-container">
-
+  </div>
     <div class="about-images"> 
       <img 
       src="media/senior-portrait-small.jpg"
@@ -40,7 +51,7 @@
 sizes="(max-width: 768px) 100vw, 50vw"
 alt="Senior Portrait"
 class="about-photo">
-
+    
 <img 
 src="media/beachportrait-small.png"
 srcset="media/beachportrait-small.png 480w,
@@ -60,7 +71,8 @@ class="about-photo">
 <p>I grew up in Havertown Pennsylvania, and went to Merion Mercy Academy for Highschool. Throughout my 4 years I was a varsity athlete on Merion Mercy's Crew Team. </p>
    <h3> I was then recruited to row at the Division 1 level at The University of Rhode Island.</h3>
    <p>During my time as Freshman Student Athlete I was an Undeclared Major. While exploring career paths I sparked an interest for User Experience design and realized URI did not have a design program. After completing a full year at URI I decided the best option for me was to transfer to Drexel University for UX Design. </p>
-
+   </div> 
+  </section>
 <h2>Skills</h2>
 <button class="javascript"
 id="javascript"
@@ -69,7 +81,7 @@ title="javascript">Javascript</button>
 id="css"
 title="css">Css</button>
 <button class="html"
-id="html"
+id="html" title="html">HTML</button>
 
 
 
@@ -80,4 +92,6 @@ id="html"
   <img src="media/a10pic.jpg" alt="Commisioners Honor Roll">
   <h3>Deans List, University of Rhode Island, Issued May 2025</h3>
   <h3>Atlantic 10 2025 Women's Rowing Champions</h3>
-</html>
+</main>
+</body>
+  </html>

@@ -9,13 +9,19 @@
     <title>KEIRA VAUGHAN'S PORTFOLIO</title>
 </head>
 <body>
+   
     <header class="site-header">
-     <input type="checkbox" id="menu-toggle">
+     <div class="logo">
+        <img src="media/lightlog.svg" alt="Light KV ux/ui logo" class="light-logo">
+        <img src="media/darklogo.svg" alt="Dark KV ux/ui logo" class="dark-logo">
+     </div>
+        <input type="checkbox" id="menu-toggle">
      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+     
+     
         <nav class="site-nav">
-
-      <ul class="nav-links">
-          <li>KEIRA VAUGHAN'S PORTFOLIO</li>     
+<label for="menu-toggle" class="close-menu">X</label>
+      <ul class="nav-links">   
         <li> <a href="aboutme.html">About</a> </li>
                 
                <li><a href="research.html">Research</a></li>
@@ -29,22 +35,33 @@
     </header>
     <section class="hero"> 
         <h1 class="hero-title">
-        <h1>KEIRA VAUGHAN'S <br>
+        KEIRA VAUGHAN'S <br>
             UX/UI PORTFOLIO</h1>
+            <p class="hero-subtext">
+                User Experience & Interactive Design Student at Drexel University focused on creating thoughtful experiences, and User driven design.
+            </p>
     </section>
+    <main>
     <section class="featured-projects">    
     <h2> Featured Projects </h2>
     <div class="featured-grid">
+
        <div class="project-text">
        <h3>The Sisters of Mercy Research and Redesign project</h3>  
        <a href="research.html" class="project-card">Learn More </a>
          </div>
+
       <div class="light-logo">
-            <img src="media/sisters-ofmercy.png" alt="The Sisters of Mercy light logo"> </div>
+            <img src="media/sisters-ofmercy.png" alt="The Sisters of Mercy light logo"> 
+        </div>
           <div class="dark-logo">
-           <img src="media/dark-image.jpeg" media="(prefers-color-scheme: dark)" alt="The Sisters of Mercy Dark Logo">    
-          </div>
-        
+            <picture>
+               <source srcset="media/dark-image.jpeg"  media="(prefers-color-scheme: dark)">
+           <img src="media/sisters-ofmercy.png" alt="The Sisters of Mercy Logo">
+            
+            </picture>
+        </div>
+        </div>
         
     
     </section>
@@ -86,15 +103,7 @@ title="figma">Figma</button>
 <button class="canva"
 id="canva"
 title="canva">Canva</button>
-
-
-
 </section>
-<footer> 
-</footer>
-
-
-
     </main>
 </body>
 </html>

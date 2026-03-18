@@ -8,29 +8,55 @@
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
 <body>
-    <header class="site-header">
-     <input type="checkbox" id="menu-toggle">
+   <header class="site-header">
+     <div class="logo">
+        <img src="media/lightlog.svg" alt="Light KV ux/ui logo" class="light-logo">
+        <img src="media/darklogo.svg" alt="Dark KV ux/ui logo" class="dark-logo">
+     </div>
+        <input type="checkbox" id="menu-toggle">
      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+     
+     
         <nav class="site-nav">
-
-      <ul class="nav-links">
-          <li>KEIRA VAUGHAN'S PORTFOLIO</li>     
-       <li><a href="index.html">Home</a></li> 
-          <li> <a href="aboutme.html">About</a> </li>  
-                
+<label for="menu-toggle" class="close-menu">X</label>
+      <ul class="nav-links">   
+         <li><a href="index.html">Home</a></li>
+        <li> <a href="aboutme.html">About</a> </li>
                <li> <a href="projects.html">Projects</a></li>
-                
               <li>  <a href="contact.html">Contact</a> </li>
             
             </ul>
         </nav>
     </header>
+    <main>
+    <section class="hero"> 
+        <h1 class="hero-title">
+        RESEARCH AND CASE STUDIES</h1>
+            <p class="hero-subtext">
+                View my Research powerpoint if you'd like, and then feel free to take a look at my case study.
+            </p>
+    </section>
 
 <h2>The Sisters of Mercy Research</h2>
 <!--I copied and pasted the embeded code for my case study presentation. I found that downloading it as a pdf, jpg, png or heic were taking up too much space. 
 I thought this would be an easier option rather than slowing down my page loadability.-->
-<iframe src="https://drexel0-my.sharepoint.com/personal/kav77_drexel_edu/_layouts/15/Doc.aspx?sourcedoc={f3920f27-8667-4347-938f-c1a2771dcfce}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="375px" height="250px" frameborder="0" title="PowerPoint Viewer">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe 
+  src="https://drexel0-my.sharepoint.com/personal/kav77_drexel_edu/_layouts/15/Doc.aspx?sourcedoc=%7Bf3920f27-8667-4347-938f-c1a2771dcfce%7D&action=embedview&wdAr=1.7777777777777777"
+  width="375"
+  height="250"
+  title="PowerPoint Viewer"
+  style="border: none;">
+</iframe>
 
+<!--<iframe 
+src="https://drexel0-my.sharepoint.com/personal/kav77_drexel_edu/_layouts/15/Doc.aspx?sourcedoc={f3920f27-8667-4347-938f-c1a2771dcfce}&amp;action=embedview&amp;wdAr=1.7777777777777777" 
+width="375px" 
+height="250px" f
+rameborder="0" 
+title="PowerPoint Viewer"
+style="border: none;">
+<a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>
+</iframe> -->
  <h1> The Sisters of Mercy Research and Redesign</h1>
     <h2>CASE STUDY</h2>
     <h3>Introduction</h3>
@@ -38,7 +64,6 @@ I thought this would be an easier option rather than slowing down my page loadab
     <div class="og-donation">
      <img 
     src="media/ogdonation.png" alt="Original Sisters of Mercy donation page">
-    <caption>Original Donation Page</caption>
    </div>
    
 
@@ -68,13 +93,19 @@ I thought this would be an easier option rather than slowing down my page loadab
    <p>Design Goal: Create a clear, intuitive and trustworthy donation flow.</p>
 <h3>Process</h3>
 <ul>
-    <li>Semi Structured Interviews that were conducted last quarter, but reanalyzed for this project</li>
+<li>Semi Structured Interviews that were conducted last quarter, but reanalyzed for this project</li>
 <li> Affinity Mapping</li>
 <li>Card Sorting</li>
+</ul>
 <div class="cardsorting">
     <img src="media/cardsorting.png" alt="Card Sorting activity"> 
 </div>
+
+    
+<ul>
 <li>Heuristic Evaluation</li>
+</ul>
+
 <section class="evaluation">
 <div class="evaluation item">
 <h3>Top Priority</h3>
@@ -97,6 +128,7 @@ I thought this would be an easier option rather than slowing down my page loadab
 <p>Add more customization to website like text size, background colors</p>
 </div>
 </section>
+<ul>
 <li> User Personas</li>
 </ul>
 
@@ -126,6 +158,6 @@ I thought this would be an easier option rather than slowing down my page loadab
   <video controls src="media/figma-recording.mp4"></video>
 </div>
 
-
+</main>
 </body>
 </html>
