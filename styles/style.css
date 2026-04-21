@@ -20,21 +20,24 @@
      --link-color: #7A3FF2;
   --link-hover: #5E2BC7;
   --container:#f1eefb;
+
+
+
 }
   .light-logo{
     display: block;
   }
-  .dark-logo{
-    display:none;
-  }
-  .som-dark{
+  .som-light {
+  display: block;
+}
+.dark-logo,
+.som-dark {
     display: none;
-  }
+}
  
 
 @media (prefers-color-scheme: dark) {
  :root {
-    
     --background:#2B2B33;
     --text-main:#FFFF;
     --secondary-text:#a6a3a3;
@@ -48,16 +51,24 @@
     --container:#000000;
     --bg-opacity: rgba(43, 43, 51, 0.55);
  } 
-       .project-card{ background-color: var(--background);
-    }  
-    .som-light {
+       html{ background-color:var(--background-dark);
+    } 
+       .project-card{ background-color: var(--background-dark);
+    }
+    .project-card{ background-color: var(--background);}
+        
+    .light-logo,
+         .som-light {
     display: none;
-  }
-  .som-dark {
+    }
+
+  .som-dark,
+  .dark-logo {
     display: block;
   }
+}
 
-}  
+
 /*Sora Font Family*/
 @font-face {
     font-family:'Sora';
@@ -236,24 +247,16 @@ transition: width 0.4s ease-in-out;
   padding: 1rem;
 
 }
+.feature-box{
+   background-color: var(--info);
+   border: #5E2BC7;
+}
 /* Logo light vs dark*/
 
-.dark-logo {
-    display:none;
-}
-
-@media (prefers-color-scheme: dark) {
-   .som-light{ display: none; 
-}
-    .som-dark {display: block; 
-    }
-    
-}
 .logo img {
     height: 15vh;
     width: auto;
 }
-
 .hero{
 background-image:url("../media/white-plastic.jpeg");
 background-size:cover;
